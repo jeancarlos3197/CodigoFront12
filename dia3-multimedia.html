@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/dia3.html">Etiquetas semanticas</a></li>
+          <li><a href="/dia3-lista.html">Listas</a></li>
+          <li><a href="/dia3-multimedia.html">Multimedia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h1>Video</h1>
+      <video
+        src="files/rabbit320.webm"
+        controls
+        autoplay
+        width="500"
+        height="500"
+        muted
+        loop
+      >
+        <source src="" />
+      </video>
+    </div>
+    <div>
+      <h1>IFrame</h1>
+      <iframe
+        width="761"
+        height="428"
+        src=""
+        title="Youtube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard=write; encrypte=media; "
+        allowfullscreen
+      ></iframe>
+      <!-- <iframe width="500" height="500" src="" frameborder="0"></iframe> -->
+      <iframe src="#pdf" width="700" height="700" frameborder="0"></iframe>
+
+      <div>
+        <h1>Audio</h1>
+        <audio controls>
+          <source src="#audio" />
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
