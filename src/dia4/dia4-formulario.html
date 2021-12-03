@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 4 - Formulario</title>
+  </head>
+  <body>
+    <!-- Los formularios html son muy comunes los vamos a encontrar en toda pagina web -->
+    <!-- form de login -->
+    <!-- form de registro -->
+    <!-- form de contacto -->
+    <!-- form de news -->
+    <!-- Un formulario esta compuesto por input 
+        (caja de texto, numero, fecha, color, correo, password, botones para enviar la info, select menus desplegables)  -->
+    <!-- TODO: eso esta envuelto en un formulario -->
+    <!-- El form tiene atributos  -->
+    <!-- Action: es a donde se va a enviar la información -->
+    <!-- method: es la forma en que la informacion será enviada -->
+    <form action="" method="">
+      <!-- Ojo debemos poner nuestros input dentro del form, es decir el form engloba las etiquetas input, button -->
+      <!-- El input es una caja de texto la cual se cierra a si mismo, esta tiene atributos como el type, el cuál indica de que tipo es -->
+      <!-- placeholder es un atributo de ayuda -->
+      <!-- Todas las etiquetas de html pueden tener un id, para poder identificarlas para css y javascript -->
+      <!-- ** Fieldset -->
+      <!-- sirve como contenedor o caja de datos pero tiene la propiedad que se le puede poner una leyenda -->
+      <fieldset>
+          <legend>Informacion de la personas</legend>
+        <input
+          type="text"
+          placeholder="Ingrese su nombre"
+          value="Pepito"
+          name="nombre"
+          maxlength="10"
+          minlength="5"
+        />
+        <h4>Input number</h4>
+        <input type="number" placeholder="Ingrese un numero" name="numero" />
+        <h4>Input date</h4>
+        <input type="date" placeholder="Ingrese una fecha" name="fecha" />
+        <h4>Input Hora</h4>
+        <input type="time" placeholder="Ingrese una fecha" name="hora" />
+        <h4>Input Archivo</h4>
+        <input type="file" placeholder="Ingrese un archivo" name="archivo" />
+      </fieldset>
+      <h4>Input Color</h4>
+      <input type="color" placeholder="Seleccione un color" name="color" />
+      <h4>Input Password</h4>
+      <input
+        type="password"
+        placeholder="Ingrese su password"
+        name="password"
+        required
+      />
+      <h4>Input Email</h4>
+      <input
+        type="email"
+        placeholder="Ingrese su correo"
+        name="correo"
+        required
+      />
+      <h4>Radio Button</h4>
+      <!-- En los input para poder asignar un texto debo usar la etiqueta label -->
+      <!-- El for del label hace referencia al id del input -->
+      <label for="radio_1">
+        <input type="radio" name="opcion_color" id="radio_1" />Rojo
+      </label>
+      <input type="radio" name="opcion_color" id="" />Azul
+      <input type="radio" name="opcion_color" id="" />Verde
+      <h4>Check box</h4>
+      <!-- Los check box permiten marcas mas de una opcion -->
+      <input type="checkbox" name="curso" id="" />Matematica
+      <input type="checkbox" name="curso" id="" />Lenguaje
+      <input type="checkbox" name="curso" id="" />HTML
+      <input type="checkbox" name="curso" id="" />Javascript
+      <input type="checkbox" name="curso" id="" />CSS
+
+      <!-- los select (Combo box, menu desplegable) -->
+      <h4>select</h4>
+      <!-- los select se componen de 2 elementos, el padre select y el hijo option -->
+      <!-- Los options son cada opcion de mi select -->
+      <!-- los select tambien tienen un name, pero ese va como atributo del select -->
+      <!-- Cuando yo envie una data, el select va a enviar al que este seleccionado, 
+        cada option va a tener un value, por que ese valor es el que se envia -->
+      <select name="cursos_codigo" id="">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">Javascript</option>
+        <option value="rj">React</option>
+      </select>
+      <!-- por default la primera opcion es la que se muestra marcado -->
+      <!-- los options tienen el atributo selected que permite marcar una opcion -->
+      <select name="paises" id="">
+        <option value="peru">peru</option>
+        <option value="colombia">colombia</option>
+        <option value="chile">chile</option>
+        <option value="mexico">mexico</option>
+      </select>
+      <!-- TextArea caja de texto grando, sirve para poner cadena de texto a gran cantidad -->
+      <h3>TextArea</h3>
+      <textarea name="areaTexto" id="" cols="30" rows="10" placeholder="Ingrese texto"></textarea>
+
+      <!-- Hay in input submit ahora este significa que es el boton que envia la información -->
+      <h3>Submit</h3>
+      <input type="submit" value="Enviar datos" />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
