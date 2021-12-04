@@ -1,0 +1,113 @@
+/*** Que es CSS */
+/* Es un motor de estilos muy potentes */
+/* padding es el espacio interno de un elemento */
+/* margin es el espacio externo de un elemento */
+
+/* estilos globales 
+para poder tener un estilo global para mi web yo puedo  */
+
+/* Se recomienda solo manejar el margin, padding y border-box */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* font-family es el atributo que permite cambiar el tipo de fuente */
+    /* actualmente el odernador viene con el tipo de fuente instalada */
+    /* podemos descargar un tipo de fuente personalizado */
+    /* tambien podemos llamar un tipo de fuente por medio de un url */
+    font-family: Helvetica;
+}
+
+/* Ahora vamos a ver como aplicar a una etiqueta especial */
+/* quiero que mi h1 sea de color rojo */
+h1{
+    /* color es el color de las cadenas de textos */
+    color: red;
+    /* Background-color es el color de fondo  */
+    background-color: #000;
+    /* adigna un peso al texto de a cuerdo al numero asignado 100-900 y bold */
+    font-weight: bold;
+    text-align: center;
+}
+
+section{
+    background-color: yellow;
+    /* es una propiedad para poner un border a un elemento
+    tamaño de pixel color tipo de linea */
+    border: solid #ab1234 3px;
+
+}
+
+p{
+    text-align: justify;
+}
+
+/* Como acceder a un elemento hijo */
+/* Para poder acceder a un elemento en cascada puede anidar la etiqueta */
+/* Busca al elemento article y dentro de este debe estar el p y a ese p ponle el color azul */
+article p {
+    color: blue;
+    /* Permite poner el texto en 4 formas,
+    alineado derecha
+    alineado izquierda
+    centrado 
+    justificado */
+    text-align: center;
+    /* font-size, sirve para le tamaño del texto */
+    font-size: 18px;
+}
+/* mis li sean verdes */
+li{
+    color: green;
+}
+
+/* como hago para que el ul tenga como color de fondo un gris*/
+ul{
+    background-color: gray;
+    
+}
+nav{
+    border: 1px solid red;
+    text-align: right;
+}
+ul li{
+    /* quita las viñetas a nuestros li */
+    list-style: none;
+    /* es la propiedad en la que se puede mostrar un elemento , default es display:block */
+    display: inline;
+}
+a{
+    color: #000;
+    /* text-decoration es una propiedad para poder asignar distintos estilos a un texto */
+    text-decoration: none;
+}
+
+div{
+    border: 5px solid #000;
+    text-align: center;
+}
+
+img{
+    /* width y height maneja el ancho y la altura, la unidad basica son px, que sin pixeles */
+    width: 50%;
+    height: 300px;
+}
+/* ID */
+/* Para poder acceder a un id que esta en html usamos el #nombre */
+#titulo{
+ color: aqua;   
+}
+#texto__introduccion{
+    text-align: justify;
+}
+/* usando clases podemos reutilizar codigo css, por ende se recomienda usar clases en vez de id, solo usar id cuando sea necesario */
+.texto__pagina{
+    color: chocolate
+}
+#logo{
+    width: 300px;
+    height: 100px;
+    border: 4px solid rgb(56, 255, 255);
+}
