@@ -1,56 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SELECTORES</title>
     <style>
-        /* Selectores SIMPLES */
-        body{
-            background-color: red;
-        }
-        /* SELECTOR DE CLASE */
-        .box{
-            width: 200px;
-            height: 200px;
-            background-color: orange;
-        }
-        /* SELECTOR DECENDIENTE */
-        ul a{
-            color: white;
-        }
-        /* SELECTOR POR ATRIBUTO */
-        input[type="text"] {
-            padding: 20px;
-        }
-        input[disabled]{
-            background-color: gray;
-        }
-        a[href="https://linkendin.com"]{
-            background-color: violet;
-            color: orangered;
-        }
-        a[href="https://google.com.pe"]{
-            background-color: white;
-            color: yellow;
-        }
+      /* Selectores SIMPLES */
+      body {
+        background-color: red;
+      }
+      /* SELECTOR DE CLASE */
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+      }
+      /* SELECTOR DECENDIENTE */
+      ul a {
+        color: white;
+      }
+      /* SELECTOR POR ATRIBUTO */
+      input[type="text"] {
+        padding: 20px;
+      }
+      input[disabled] {
+        background-color: gray;
+      }
+      a[href="https://linkendin.com"]
+      {
+        background-color: violet;
+        color: orangered;
+      }
+      a[href="https://google.com.pe"]
+      {
+        background-color: white;
+        color: yellow;
+      }
+      /* PSEUDOCLASE */
+      .box:hover {
+        background-color: blueviolet;
+      }
+      .box:hover h2 {
+        color: white;
+      }
+      input:focus {
+        outline: none;
+        box-shadow: 0 0 10px blue;
+      }
+      .one li:first-child a {
+        color: brown;
+      }
+      .one li:last-child a {
+        color: brown;
+      }
+      .one li:nth-child(2) a {
+        color: brown;
+      }
+      .one li:nth-child(odd) a {
+        background-color: white;
+      }
+
+      .one li:nth-child(even) a {
+        background-color: green;
+      }
+      /* PSEUDO ELEMENTOS */
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="box">
+      <h2>TEXTO</h2>
     </div>
-    <ul>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
+    <ul class="one">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
     </ul>
-    <input type="text" name="" id="">
-    <input type="checkbox" name="" id="">
-    <input type="password" name="" id="">
-    <input type="text" disabled>
+
+    <style>
+      .two li:nth-child(2n + 2) {
+        background-color: blue;
+      }
+      .two li:nth-child(2n + 1) {
+        background-color: green;
+      }
+    </style>
+    <ul class="two">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+    </ul>
+    <input type="text" name="" id="" />
+    <input type="checkbox" name="" id="" />
+    <input type="password" name="" id="" />
+    <input type="text" disabled />
     <a href="https://linkendin.com">LINKEDIN</a>
     <a href="https://google.com.pe">GOOGLE</a>
     <a href="https://youtube.com">YOUTUBE</a>
-</body>
+
+    <!-- No hacer esto -->
+    <style>
+      /* PSEUDO ELEMENTOS */
+      /* h2::before{
+            content:"''";
+        }
+        h2::after{
+            content: "''";
+        } */
+      h2::first-letter {
+        font-size: 40px;
+      }
+      p::first-line {
+        background-color: white;
+      }
+    </style>
+    <h2>TITULO DE PAGINA HOLA MUNDO</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci
+      deserunt natus dicta ad. Minima culpa repellat, dolor non omnis veritatis
+      itaque, atque incidunt debitis illo illum temporibus in adipisci! Lorem,
+      ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellat
+      ducimus nulla eum quis provident voluptate at dolores a iure placeat culpa
+      esse, dolorum non rem architecto ullam natus unde.
+    </p>
+
+    <style>
+      ul > li {
+        border-top: 5px solid blue;
+      }
+    </style>
+    <ul>
+      <li>Unordered item</li>
+      <li>
+        Unordered item
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+      </li>
+    </ul>
+
+    <style>
+      h2 + p {
+        background-color: blue;
+      }
+    </style>
+    <h2>TITULO</h2>
+    <p>LOREM</p>
+    <p>LOREM</p>
+    <h2>TITULO</h2>
+    <p>LOREM</p>
+    <h2>TITULO</h2>
+    <p>LOREM</p>
+    <h2>TITULO</h2>
+    <p>LOREM</p>
+    <style>
+        h3~p{
+            background-color: orange;
+        }
+        *::selection{
+            background-color: pink;
+        }
+    </style>
+    <h3>TITULO</h3>
+    <p>lorem</p>
+    <p>Lorem</p>
+    <p>Lorem</p>
+
+    <style>
+        h1,h2,h3,h4,h5,h6{
+            color:red;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: green;
+        }
+    </style>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+  </body>
 </html>
