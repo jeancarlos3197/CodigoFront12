@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidades de medidas</title>
+  </head>
+  <body>
+    <style>
+        html{
+            font-size: 62.5%;
+            /* BASE 10 */
+        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+      }
+      h1 {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+    <h1>TITULO PRINCIPAL</h1>
+
+    <style>
+      /* EM: aplica referente al tamaño de un elemento padre mas cercano y declarado
+      agregar solo en el font-size(recomendado)*/
+      div{
+          font-size: 20px;
+      }
+      h2 {
+        /* font-size: 1em; */
+        font-size: 30px;
+      }
+      h2 small{
+          font-size: .5em;
+      }
+    </style>
+    <div>
+      <h2>SUB TITULO</h2>
+      <small>ACA EL TEXTO MAS PEQUEÑO</small>
+    </div>
+
+    <style>
+         /* REM toma como unidad de medida las configuraciones de tu navegador de manera global*/
+         p{
+             font-size: 1.4rem;
+         }
+    </style>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rem et quaerat. Et sint numquam porro ut facilis tempore labore eius aspernatur, vero maxime officia qui eum dolor ex harum.</p>
+    <style>
+        /* porcentaje */
+        .container{
+            max-width: 960px;
+            background-color: red;
+            display: flex;
+            margin: auto;
+        }
+        div.caja-verde{
+            background-color: green;
+            width: 50%;
+        }
+        div.caja-azul{
+            background-color: blue;
+            width: 50%;
+        }
+    </style>
+    <div class="container">
+        
+        <div class="caja-verde">
+            caja verde
+        </div>
+        <div class="caja-azul">
+            caja azul
+        </div>
+    </div>
+</body>
+</html>

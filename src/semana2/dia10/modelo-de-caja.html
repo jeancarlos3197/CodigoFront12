@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display: block //convierte en bloque al elemento
+            display: inline //convierte en linea al elemento
+            display: none  // esconde el elemento
+            visibility: hidden
+            display: inline-block
+            */ 
+        body{
+            margin: 0;
+        }
+        a{
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+    <a href="">LOGO</a>
+    <a href="">LOGO</a>
+    <a href="">LOGO</a>
+    <a href="">LOGO</a>
+    <a href="">LOGO</a>
+    <a href="">LOGO</a>
+    <div>DIV</div>
+    <h1>H1</h1>
+    <span>SPAN</span>
+
+    <style>
+        h2{
+            /* border-style: dotted;
+            border-width: 3px;
+            border-color: red; */
+            border: 10px dotted red;
+
+        }
+    </style>
+    <h2>h2</h2>
+
+    <style>
+        .margen{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            /* margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px; */
+            margin: 20px 20px 20px 20px;
+        }        
+    </style>
+    <div class="margen">
+    </div>
+    <div class="margen">
+    </div>
+    <style>
+        .padding{
+            background-color: yellow;
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+    </style>
+    <h2>Padding</h2>
+    <div class="padding">
+        PADDING
+    </div>
+    <div class="padding">
+        PADDING
+    </div>
+
+    <style>
+        .box-sizing{
+            width: 100%;
+            height: 200px;
+            background-color: orange;
+            padding: 20px;
+
+            /* Utilizar a todos los elementos */
+            box-sizing: border-box;
+
+        }
+    </style>
+    <div class="box-sizing">
+        BOX SIZING
+    </div>
+
+    <style>
+        .box-viewport{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            overflow: auto;
+        }
+    </style>
+
+    <div class="box-viewport">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque facilis perferendis quisquam sed laboriosam? Quas praesentium nemo nesciunt a magni dicta nulla facilis at odio? Modi quam nisi corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores aliquid praesentium ipsa reiciendis maxime error, alias harum voluptate pariatur quam est, cupiditate rerum sunt natus aut. Excepturi, atque illo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque facilis perferendis quisquam sed laboriosam? Quas praesentium nemo nesciunt a magni dicta nulla facilis at odio? Modi quam nisi corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores aliquid praesentium ipsa reiciendis maxime error, alias harum voluptate pariatur quam est, cupiditate rerum sunt natus aut. Excepturi, atque illo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque facilis perferendis quisquam sed laboriosam? Quas praesentium nemo nesciunt a magni dicta nulla facilis at odio? Modi quam nisi corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores aliquid praesentium ipsa reiciendis maxime error, alias harum voluptate pariatur quam est, cupiditate rerum sunt natus aut. Excepturi, atque illo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque facilis perferendis quisquam sed laboriosam? Quas praesentium nemo nesciunt a magni dicta nulla facilis at odio? Modi quam nisi corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores aliquid praesentium ipsa reiciendis maxime error, alias harum voluptate pariatur quam est, cupiditate rerum sunt natus aut. Excepturi, atque illo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque facilis perferendis quisquam sed laboriosam? Quas praesentium nemo nesciunt a magni dicta nulla facilis at odio? Modi quam nisi corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores aliquid praesentium ipsa reiciendis maxime error, alias harum voluptate pariatur quam est, cupiditate rerum sunt natus aut. Excepturi, atque illo.</p>
+    </div>
+
+    <style>
+        .background{
+            width: 200px;
+            height: 200px;
+            /* background-color: green;
+            background-image: url("https://media.prod.mdn.mozit.cloud/attachments/2015/12/02/11983/4e58af0c4274c982a2485fba43a06917/starsolid.gif");
+            background-repeat: repeat-y;
+            background-position: 20px 20px; */
+            background: url("https://media.prod.mdn.mozit.cloud/attachments/2015/12/02/11983/4e58af0c4274c982a2485fba43a06917/starsolid.gif") green no-repeat 10px 10px;
+        }
+    </style>
+    <div class="background"></div>
+
+    <h2>outline</h2>
+    <style>
+        .outline{
+            width: 200px;
+            height: 200px;
+            outline: 1px solid red;
+        }
+        input{
+            padding: 10px;
+        }
+        input:focus{
+            outline: 0;
+        }
+    </style>
+    <div class="outline">
+        OUTLINE
+    </div>
+    <input type="text">
+</body>
+</html>
