@@ -1,0 +1,125 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+h2{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #87119A;
+    border-left: 8px solid #87119A;
+    height: 52px;
+    padding-left: 23px;
+    margin-bottom: 18px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+}
+.wrap{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.wrap main{
+    flex-grow: 1;
+    padding-top: 15px;
+}
+/* HEADER */
+.header{
+    background-color: #9ECEFA;
+}
+.header nav{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 a{
+    font-family: 'Fascinate', cursive;
+    font-size: 52px;
+}
+.header ul{
+    display: flex;
+}
+.header ul li a{
+    color: #707070;
+}
+.header ul li:first-child a{
+    text-decoration: underline;
+    color: #87119A;
+    font-weight: bold;
+}
+.header a{
+    margin-right: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    color: #87119A;
+    /* font-weight: 700; */
+}
+/* MAIN */
+.main{
+    margin: 25px 25px 25px;
+    padding-bottom: 320px;
+}
+/* NOSOTROS */
+.nosotros .img__nosotros{
+    padding-top: 35px;
+    padding-bottom: 90px;
+}
+/* SERVICIOS */
+.servicios .img__servicios{
+    padding-top: 35px;
+    padding-bottom: 90px;
+}
+.servicios figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* PORTAFOLIO */
+.portafolio .img__portafolio{
+    padding-top: 35px;
+    padding-bottom: 90px;
+}
+.portafolio .img__portafolio img{
+    width: 20%;
+}
+/* CONTACTO */
+.contacto div{
+    display: flex;
+
+}
+.contacto .text__contacto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-top: 35px;
+}
+.contacto .text__contacto p span{
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #9ECEFA;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p{
+    font-weight: bold;
+}
+.footer p span{
+    color: #87119A;
+    font-weight: bold;
+}
