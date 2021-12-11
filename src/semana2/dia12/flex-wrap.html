@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            display: flex;
+            background-color: pink;
+            justify-content: flex-start;
+            align-items: stretch;
+            flex-direction: row;
+            height: 100px;
+
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .flex-wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .flex div{
+            width: 200px;
+        }
+        .flex div:nth-child(odd){
+            background-color: red;
+        }
+        .flex div:nth-child(even){
+            background-color: green;
+        }
+        .flex-column{
+            flex-direction: column;
+        }
+        .flex-column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+    <h1>NO-FLEX-WRAP</h1>
+    <div class="flex ">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <h1>FLEX-WRAP</h1>
+    <div class="flex flex-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+    <h1>FLEX-WRAP-reverse</h1>
+    <div class="flex flex-wrap-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

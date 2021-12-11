@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            display: flex;
+            background-color: pink;
+        }
+        .flex div:nth-child(odd){
+            background-color: red;
+        }
+        .flex div:nth-child(even){
+            background-color: green;
+        }
+        .justify-start{
+            justify-content: flex-start;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .justify-end{
+            justify-content: flex-end;
+        }
+        .justify-between{
+            justify-content: space-between;
+        }
+        .justify-around{
+            justify-content: space-around;
+        }
+        .justify-evelyn{
+            justify-content: space-evenly;
+        }
+    </style>
+    <h1>Justify-content</h1>
+    <h2>flex-start</h2>
+    <div class="flex justify-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>center</h2>
+    <div class="flex justify-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="flex justify-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="flex justify-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="flex justify-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>space-evenly</h2>
+    <div class="flex justify-evelyn">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
