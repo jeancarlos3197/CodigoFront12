@@ -12,9 +12,13 @@
     <!-- Posicion absoluta, pogress con divs -->
     <div class="wrap">
         <div class="cabecera">
-            <img src="./files/imagen1.png" alt="">
-            <h1>codiGO</h1>
-            <p> Hola, mi nombre es Sebastian Yabiku </p>
+            <div>
+                <figure>
+                    <img src="./files/imagen1.png" alt="">
+                </figure>
+                <h1>codiGO</h1>
+                <h2> Hola, mi nombre <br> es Sebastian Yabiku </h2>
+            </div>
         </div>
         <div class="sobre_mi">
             <h2>Sobre mi</h2>
@@ -27,8 +31,7 @@
                 <div class="skills">
                     <p>HTML</p>
                     <div class="progress">
-                        <div class="fondo"></div>
-                        
+                        <div class="fondo"></div>                        
                     </div>
                 </div>
                 <div class="skills">
@@ -93,16 +96,16 @@
         <div class="contacto">
             <h2>Contacto</h2>
             <form action="">
-                <div class="texto">
+                <div>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                     <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <div>
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
-                    <textarea name="descripcion" id="" cols="50" rows="10" placeholder="Descripción"></textarea>
-                </div>
-                <div class="boton">
-                    <input type="submit" value="ENVIAR">
-                </div>
+                </div>  
+                <textarea name="descripcion" id="" cols="50" rows="10" placeholder="Descripción"></textarea>
+                <button>Enviar</button>
             </form>
         </div>
     </div>
