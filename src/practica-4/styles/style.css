@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Poppins:wght@500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+/* Global */
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: 400;
+}
+a{    
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 50px;
+}
+.title{
+    position: relative;
+    font-size: 2.1rem;
+    display: inline
+}
+.title figure, .title h1{
+    position: absolute;;
+}
+.title figure:nth-child(2){
+    display: block;
+    left: 4px;
+    top: 0px;
+}
+.title figure:nth-child(3){
+    display: block;
+    left: 8px;
+}
+.title figure:nth-child(4){
+    display: block;
+    left: 12px
+}
+.title h1{
+    left: 32px;
+    top: 32%;
+    color: #6D0AD3;
+    text-shadow: 0px 2px #9DBF7A;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+header ul li a{
+    color: #262626;
+    font-weight: 500;
+    padding: 10px;
+    position:relative;
+    text-align: center;
+}
+header ul li a div{
+    position: absolute;
+    height: 4px;
+}
+header ul li a:hover {
+    color: #00CF95;
+    
+}
+header ul li a:hover > div{
+    bottom: 0px;
+    right: 0px;
+    right: 50%;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #00CF95;
+    transition: all 500ms;
+}
+header ul li a:active{ 
+    color: #6D0AD3;
+}
+header ul li a:active > div{
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border-bottom: 4px solid #6D0AD3;
+    background-color: #6D0AD3;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+/* MAIN */
+main{
+    padding-top: 70px;
+}
+/* ABOUT ME */
+.about_me{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px 0px 150px;    
+}
+.container_description{
+    flex-direction: column;
+    width: 50%;
+}
+.container_description p:nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.container_description .name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-top: 20px;
+}
+.container_description .front{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00CF95;
+    font-size: 3.8rem;
+    margin-top: 20px;
+}
+.container_description .description{
+    font-family: 'Raleway', sans-serif;
+    border-left: 4px solid #80E7CA;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.about_container button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #6D0AD3;
+    color: white;
+    background-color: #6D0AD3;
+}
+.about_container button:hover{
+    color: #6D0AD3;
+    background-color: white;
+    border: 1px solid #6D0AD3;
+}
+.social{
+    font-size: 2.4rem;
+    width: 50%;
+    display: flex;
+}
+.social ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social ul li a{
+    color: #000;
+}
+.social ul li:nth-child(1) a{
+    color: #0176B5;
+}
+.social ul li:nth-child(3){
+    background-color: #000;
+    width: 24px;
+    text-align: center;
+    border-radius: 100%;
+}
+.social ul li:nth-child(3) a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.social ul li:nth-child(5) a{
+    color: #44C24F;
+}
+
+.photo_profile{
+    /* width: 50%; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+.photo_profile figure{
+    width: 100%;
+    background-color: #D1FFA2;
+    border-radius: 100%;
+    text-align: left;
+    display: flex;
+    height: auto;
+}
+.photo_profile figure img{
+    width: 95%;
+    height: auto;
+}
+.container_share{
+    width: 20%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.container_share div{
+    text-align: center;
+}
+.container_share div p{
+    border-top: 1px solid #8F949D;
+    border-left: 1px solid #8F949D;
+    border-right: 1px solid #8F949D;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    padding: 2px 0px 2px 0px;
+}
+.like{
+    width: 100%;
+    background-color: #507FF7;
+    border: 1px solid #507FF7;
+    padding: 5px 0px 2px 0px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+.like a{
+    color: #fff;
+}
+.like:hover{
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #507FF7;
+}
+.like a:hover{
+    color: #507FF7;
+}
+.share{
+    margin: 2px 0 2px 0;
+    padding: 5px 0px 2px 0px;
+    border: 1px;
+    width: 100%;
+    background-color: #3975EA;
+    border: 1px solid #3975EA;
+    border-radius: 3px;
+}
+.share a{
+    color:#fff
+}
+.share:hover{
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #3975EA;
+}
+.share a:hover{
+    color: #3975EA;
+}
+.twitter{
+    margin: 10px 0 2px 0;
+    padding: 5px 0px 2px 0px;
+    border-radius: 5px;
+    border: 1px;
+    width: 100%;
+    background-color: #4793DA;
+    border: 1px solid #4793DA;
+}
+.twitter a{
+    color: #fff;
+}
+.twitter:hover{
+    background-color: #fff;
+    color: #fff;
+    border: 1px solid #4793DA;
+}
+.twitter a:hover{
+    color: #4793DA;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            font-family: arial;
+            font-size: 13px;
+        }
+
+        header {
+            background: red;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+        }
+
+        header .logo {
+            font-size: 34px;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        header ul {
+            display: flex;
+        }
+
+        header li {
+            margin-left: 10px;
+        }
+
+        header button {
+            display: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 8px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .images figure {
+            padding: 20px;
+        }
+
+        @media (min-width:0px) and (max-width:800px) {
+            header {
+                background: green;
+            }
+
+            .images figure {
+                width: 50%;
+            }
+
+            .images img {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:0px) and (max-width:580px) {
+            .images figure {
+                width: 100%;
+            }
+
+            section h1 {
+                font-size: 18px;
+            }
+
+            body {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width:0px) and (max-width:460px) {
+            header nav {
+                display: none;
+            }
+
+            header button {
+                display: block;
+            }
+        }
+    </style>
+    <header>
+        <a href="" class="logo">LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">Quienes somos</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <button>MENU</button>
+    </header>
+    <main>
+        <section class="section-main">
+            <h1>TITULO PRINCIPAL</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo enim provident iste excepturi
+                blanditiis
+                sint officia, culpa dolorum voluptatum laboriosam. Atque ipsa, quia est culpa dolor id odio libero.</p>
+            <div class="images">
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+            </div>
+        </section>
+        <section class="section">
+            <h2>SUPTITULO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro repudiandae ab rerum aliquid
+                eligendi eius omnis quo a enim, sunt consectetur soluta minima modi cum quam eum iusto maxime.</p>
+
+            <div class="images">
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+            </div>
+        </section>
+        <section class="section-two">
+            <h2>SUPTITULO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro repudiandae ab rerum aliquid
+                eligendi eius omnis quo a enim, sunt consectetur soluta minima modi cum quam eum iusto maxime.</p>
+
+            <div class="images">
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+                <figure>
+                    <img src="https://picsum.photos/200/300" alt="">
+                </figure>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

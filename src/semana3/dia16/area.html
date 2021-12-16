@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+        }
+        .wrap{
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas:  "header header header"
+                                    "nav main aside"
+                                    "footer footer footer";
+            /* grid-gap: 20px;
+            padding: 20px; */
+            height: 100vh;
+        }
+        header{
+            grid-area: header;
+            background-color: red;
+        }
+        nav{
+            grid-area: nav;
+            background-color: yellow;
+        }
+        main{
+            grid-area: main;
+            background-color: orange;
+        }
+        aside{
+            grid-area: aside;
+            background-color: blue;
+        }
+        footer{
+            grid-area: footer;
+            background-color: green;
+        }
+        .grid {
+            display: grid;
+            /* background: pink; */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 100px; */
+
+            /* grid-row-gap: 20px;
+            grid-column-gap: 20px; */
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+    <div class="wrap">
+        <header>
+            header
+        </header>
+        <nav>
+            NAV
+        </nav>
+        <main>
+            <div class="grid">
+                <div><img src="https://picsum.photos/200/300?random=1" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=2" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=3" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=4" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=5" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=6" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=7" alt=""></div>
+                <div><img src="https://picsum.photos/200/300?random=8" alt=""></div>
+            </div>
+        </main>
+        <aside>
+            ASIDE
+        </aside>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>

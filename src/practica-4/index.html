@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/e4835781b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <div class="wrap">
         <header>
-            <div class="titulo">
+            <div class="title">
                 <figure><img src="./files/Rectangle 70.svg" alt=""></figure>
                 <figure><img src="./files/Rectangle 71.svg" alt=""></figure>
                 <figure><img src="./files/Rectangle 72.svg" alt=""></figure>
@@ -19,24 +20,30 @@
                 <h1>S</h1>
             </div>
             <ul>
-                <li><a href="#about_me">Sobre mi</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about_me">Sobre mi <div></div></a></li>
+                <li><a href="#portfolio">Portafolio <div></div></a></li>
+                <li><a href="#services">Servicios <div></div></a></li>
+                <li><a href="#blog">Blog <div></div></a> </li>
+                <li><a href="#contact">Contacto <div></div></a></li>
             </ul>
         </header>
         <main>
             <section class="about_me">
                 <div class="container_description">
                     <p>Hola, Hello</p>
-                    <h2>Soy Sebastian Yabiku
-                        Front end Developer</h2>
+                    <h2 class="name">Soy Sebastian Yabiku </h2>
+                    <h2 class="front">Front end Developer</h2>
                     <p class="description">Gracias por visitar mi pagina, en esta encontraras informacion sobre mi, mi experiencia, los servicios que ofrezco, algunas cosas de las que me gusta investigar y podras contactarme y contarme sobre ti.</p>
                     <div class="about_container">
                         <button>Descargar CV</button>
                         <div class="social">
-                            <!-- i*5 -->
+                            <ul>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-github"></i></a></li>
+                                <li><a href=""><i class="fab fa-codepen"></i></a></li>
+                                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -44,12 +51,22 @@
                     <figure>
                         <img src="./files/profile.png" alt="">
                     </figure>
-                    <div class="to_share">
-                        <figure><img src="./files/gusta_compartir.png" alt=""></figure>
-                        <figure><img src="./files/tweet.png" alt=""></figure>
+                    <div class="container_share">
+                        <div>
+                            <p>4,6 mil.</p>
+                            <div class="like">
+                                <a href="#"><i class="fas fa-check"></i> Me gusta</a>
+                            </div>
+                            <div class="share">
+                                <a  href="#">Compartir</a>
+                            </div>
+                            <div >
+                            <div class="twitter">
+                                <a  href="#"> <i class="fab fa-twitter"></i> Twitter</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
             </section>
             <section class="portfolio">
                 <h2>PORTFOLIO</h2>
@@ -144,7 +161,7 @@
         </main>
         <footer>
             <div>
-                <div class="titulo">
+                <div class="title">
                     <figure><img src="./files/Rectangle 70.svg" alt=""></figure>
                     <figure><img src="./files/Rectangle 71.svg" alt=""></figure>
                     <figure><img src="./files/Rectangle 72.svg" alt=""></figure>
