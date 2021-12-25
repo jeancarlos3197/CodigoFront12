@@ -1,0 +1,23 @@
+$color-principal:#cdcdcd;
+$font-family-principal: arial;
+$font-family-titulos: verdana;
+body{
+    color: $color-principal;
+    font-family: $font-family-principal;
+}
+a{
+    color: $color-principal;
+    font-family: $font-family-principal;
+}
+ul li{
+    color: $color-principal;
+    font-family: $font-family-principal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $font-family-titulos;
+}

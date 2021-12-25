@@ -1,0 +1,23 @@
+body {
+  color: #cdcdcd;
+  font-family: arial;
+}
+
+a {
+  color: #cdcdcd;
+  font-family: arial;
+}
+
+ul li {
+  color: #cdcdcd;
+  font-family: arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: verdana;
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        .row {
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .row h2 {
+            margin: 0 0 20px;
+            border-bottom: 3px solid pink;
+            padding: 0 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <style>
+            .radius {
+                width: 100px;
+                height: 100px;
+                background: red;
+                /* border-top-left-radius: 100%;
+                border-top-right-radius: 100%;
+                border-bottom-left-radius: 100%;
+                border-bottom-right-radius: 100%; */
+                border-radius: 8px;
+            }
+        </style>
+        <h2>BORDES REDONDEADOS</h2>
+        <div class="radius">
+        </div>
+    </div>
+
+    <div class="row">
+        <style>
+            .box-shadow {
+                /* box-shadow: 10px 10px 10px 10px blue; */
+                box-shadow: 28px 18px 10px blue, 56px 41px 10px orange, 76px 67px 10px pink;
+            }
+
+            input.shadow {
+                margin-top: 100px;
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid #6d6d6d;
+            }
+
+            input:focus {
+                outline: none;
+                box-shadow: 0px 0px 0 4px #cdcdcd;
+            }
+        </style>
+        <h2>BOX SHADOWS</h2>
+        <div class="radius box-shadow">
+        </div>
+        <input class="shadow" type="text">
+    </div>
+
+    <div class="row">
+        <style>
+            .text-shadow {
+                font-size: 24px;
+                text-shadow: 6px 6px 0 red, 17px 11px 0 orange;
+            }
+        </style>
+        <h2>TEXT SHADOWS</h2>
+
+        <h3 class="text-shadow">SEBASTIAN YABIKU</h3>
+        <p class="text-shadow">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem magni consectetur quos neque?
+            Necessitatibus, doloribus. Iusto consequuntur tempora iste, quibusdam rem quas saepe tempore accusantium
+            harum ut, nemo architecto quasi?
+        </p>
+    </div>
+
+    <div class="row">
+        <style>
+            .box-deg {
+                width: 100px;
+                height: 100px;
+            }
+
+            .degradado-lineal {
+                background: linear-gradient(45deg, red, blue, pink, rgba(255, 165, 0, .5));
+            }
+
+            .degradado-radial {
+                background: radial-gradient(red 5%, blue 20%, pink 50%);
+            }
+        </style>
+        <h2>DEGRADADOS</h2>
+
+        <div class="box-deg degradado-lineal">
+        </div>
+        <br>
+        <div class="box-deg degradado-radial">
+        </div>
+        <br>
+    </div>
+
+    <div class="row">
+        <style>
+            .box-trans {
+                width: 100px;
+                height: 100px;
+                background: red;
+                /* transition-property: background;
+                transition-property: box-shadow;
+                transition-property: width; */
+                /* transition-property: all;
+                transition-duration: 1s; */
+                /* transition-delay: 1s; */
+                /* transition-timing-function: ease-in-out; */
+                transition: all .5s ease;
+            }
+
+            .box-trans:hover {
+                background: green;
+                box-shadow: 0 0 10px blue;
+                width: 200px;
+                height: 200px;
+            }
+
+            .input-trans {
+                margin-top: 10px;
+                padding: 10px;
+                transition: all .3s ease;
+            }
+
+            .input-trans:focus {
+                outline: none;
+                border: 1px solid #cdcdcd;
+            }
+        </style>
+        <h2>TRANSICIONES</h2>
+        <div class="box-trans">
+        </div>
+
+        <input type="text" class="input-trans">
+    </div>
+
+    <div class="row" style="display:none">
+        <style>
+            .animation {
+                animation-name: textColor;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+
+            .like {
+                background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/349115/like_animation.png);
+                width: 110px;
+                height: 110px;
+                animation-name: like-gif;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                background-size: 3000%;
+                animation-timing-function: steps(28)
+            }
+
+            @keyframes textColor {
+                from {
+                    font-size: 20px;
+                    color: orange;
+                }
+
+                to {
+                    font-size: 40px;
+                    color: red;
+                }
+            }
+
+            @keyframes like-gif {
+                0% {
+                    background-position: 0%;
+                }
+
+                100% {
+                    background-position: 100%;
+                }
+            }
+        </style>
+        <h2>ANIMACIONES</h2>
+        <p class="animation">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sit. Voluptates similique
+            ad, quo blanditiis
+            nemo asperiores, eaque itaque, id quidem quaerat accusamus? Reprehenderit animi nisi dolor voluptas, nostrum
+            voluptate.</p>
+
+        <div class="like"></div>
+    </div>
+
+    <div class="row">
+        <style>
+            .transform {
+                width: 100px;
+                height: 100px;
+                background: orange;
+                transition: all .5s ease;
+                margin: 10px;
+            }
+
+            .translate:hover {
+                transform: translate(20px, 30px);
+            }
+
+            .translate-x:hover {
+                transform: translateX(40px);
+            }
+
+            .translate-y:hover {
+                transform: translateY(40px);
+            }
+
+            .scale:hover {
+                transform: scale(2);
+            }
+
+            .scale-x:hover {
+                transform: scaleX(2);
+            }
+
+            .scale-y:hover {
+                transform: scaleY(2);
+            }
+
+            .rotate:hover {
+                transform: rotate(-1turn);
+            }
+
+            .rotate-x:hover {
+                transform: rotateX(90deg);
+            }
+
+            .rotate-y:hover {
+                transform: rotateY(180deg);
+            }
+
+            .skew:hover {
+                transform: skew(45deg);
+            }
+
+            .skew-x:hover {
+                transform: skewX(45deg);
+            }
+
+            .skew-y:hover {
+                transform: skewY(45deg);
+            }
+        </style>
+        <h2>TRANSFORMACIONES</h2>
+        <h3>TRANSLATE</h3>
+        <div class="transform translate">
+        </div>
+        <h3>TRANSLATE-X</h3>
+        <div class="transform translate-x">
+        </div>
+        <h3>TRANSLATE-Y</h3>
+        <div class="transform translate-y">
+        </div>
+        <h3>SCALE</h3>
+        <div class="transform scale">
+        </div>
+        <h3>SCALE-X</h3>
+        <div class="transform scale-x">
+        </div>
+        <h3>SCALE-Y</h3>
+        <div class="transform scale-y">
+        </div>
+        <h3>ROTATE</h3>
+        <div class="transform rotate">
+        </div>
+        <h3>ROTATE-X</h3>
+        <div class="transform rotate-x">
+            X
+        </div>
+        <h3>ROTATE-Y</h3>
+        <div class="transform rotate-y">
+            Y
+        </div>
+        <h3>SKEW</h3>
+        <div class="transform skew">
+        </div>
+        <h3>SKEW-X</h3>
+        <div class="transform skew-x">
+        </div>
+        <h3>SKEW-Y</h3>
+        <div class="transform skew-y">
+        </div>
+    </div>
+
+
+    <style>
+        .scene {
+            width: 200px;
+            height: 200px;
+            perspective: 600px;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        .cube.show-front {
+            transform: translateZ(-100px) rotateY(0deg);
+        }
+
+        .cube.show-right {
+            transform: translateZ(-100px) rotateY(-90deg);
+        }
+
+        .cube.show-back {
+            transform: translateZ(-100px) rotateY(-180deg);
+        }
+
+        .cube.show-left {
+            transform: translateZ(-100px) rotateY(90deg);
+        }
+
+        .cube.show-top {
+            transform: translateZ(-100px) rotateX(-90deg);
+        }
+
+        .cube.show-bottom {
+            transform: translateZ(-100px) rotateX(90deg);
+        }
+
+        .cube__face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+
+        .cube__face--front {
+            background: hsla(0, 100%, 50%, 0.7);
+        }
+
+        .cube__face--right {
+            background: hsla(60, 100%, 50%, 0.7);
+        }
+
+        .cube__face--back {
+            background: hsla(120, 100%, 50%, 0.7);
+        }
+
+        .cube__face--left {
+            background: hsla(180, 100%, 50%, 0.7);
+        }
+
+        .cube__face--top {
+            background: hsla(240, 100%, 50%, 0.7);
+        }
+
+        .cube__face--bottom {
+            background: hsla(300, 100%, 50%, 0.7);
+        }
+
+        .cube__face--front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        .cube__face--right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .cube__face--back {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        .cube__face--left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .cube__face--top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .cube__face--bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+    </style>
+    <div style="padding:130px">
+        <div class="scene">
+            <div class="cube">
+                <div class="cube__face cube__face--front">front</div>
+                <div class="cube__face cube__face--back">back</div>
+                <div class="cube__face cube__face--right">right</div>
+                <div class="cube__face cube__face--left">left</div>
+                <div class="cube__face cube__face--top">top</div>
+                <div class="cube__face cube__face--bottom">bottom</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
