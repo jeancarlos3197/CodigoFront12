@@ -54,7 +54,7 @@ html{
 
 /* Main */
 main{
-    padding: 55px 5% 100px 5%;
+    padding: 55px 5% 0px 5%;
 }
 
 /* Search */
@@ -71,6 +71,7 @@ main{
     background-color:  #F4F4F4;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    opacity: 0.6;
 }
 .search form button i{
     color: #1F3F68;
@@ -144,6 +145,7 @@ main{
 }
 .popular--principal > div > figure > img{
     width: 100%;
+    height: 100%;
 }
 .popular--principal >div >div{
     display: flex;
@@ -232,6 +234,7 @@ main hr{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 100%;
 }
 .article > div > div{
     display: flex;
@@ -242,11 +245,25 @@ main hr{
 }
 .article > div > div > figure img{
     width: 100%;
+    height: 100%;
 }
 .article > div > div >div{
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 24px;
+}
+.article > div .article-post{
+    margin-top: 56px;
+    justify-content: space-between;
+    color: #356EAD;
+}
+.article-post > p:nth-child(1) span{
+    margin-right: 20px;
+}
+.article-post > p:nth-child(2) span{
+    margin-left: 20px;
 }
 
 /* Footer */
@@ -362,4 +379,143 @@ footer hr{
     letter-spacing: 0.05em;
     color: #fff;
     opacity: 0.4;
+}
+
+
+/* Responsive 828px */
+@media(max-width:828px){
+    /* Header */
+    .header section div {
+        padding: 50px 24% 50px 24%;
+    }
+    .header > section > div h1{
+        font-size: 3.2rem;
+    }
+    .header > section > div p{
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 0.78);
+    }
+    .header >section >div p>br{
+        display: none;
+    }
+
+    /* Popular */
+    .popular h3{
+        font-size: 2.8rem;
+        line-height: 38px;
+    }
+    .popular--secondary h3 {
+        font-size: 1.8rem;
+        line-height: 26px;
+    }
+    .popular--article h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Article */
+
+}
+
+/* Responsive 828px */
+@media(max-width:430px){
+    /* HEADER */
+    .header nav ul {
+        font-size: 1.6rem;
+    }
+    .header > section > div h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+    .header section div p {
+        font-size: 1.3rem;
+        line-height: 23px;
+    }
+
+    /* POPULAR */
+    .popular h3 {
+        font-size: 2rem;
+        /* line-height: 38px; */
+    }
+    .popular p {
+        font-size: 1.4rem;
+    }
+    .popular--secondary h3 {
+        font-size: 1.8rem;
+        gap: 30px;
+    }
+    .popular--principal > div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .popular--principal >div >div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .popular--principal > div > figure {
+        width: 100%;
+        order: -1;
+    }
+    .popular--secondary {
+        flex-direction: column;
+    }
+    .popular--secondary > div {
+        width: 100%;
+    }
+    .popular--article h3 {
+        font-size: 1.6rem;
+    }
+
+    /* ARTICLE */
+    .article h3 {
+        display: none;
+    }
+    .article > div > div {
+        flex-direction: column;
+    }
+    .article > div > div > figure {
+        width: 100%;
+    }
+    .article > div > div >div {
+        width: 100%;
+    }
+    .article > div .article-post {        
+        flex-direction: row;
+        justify-content: end;
+    }
+    .article-post p:nth-child(1){
+        display: none;
+    }
+    .article-post p:nth-child(2){
+        display: flex;
+        justify-content: end;
+    }
+    .article-post p:nth-child(2) span{
+        display: none;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #316099;
+        padding: 0px 0 60px 0;
+    }
+    footer .team {
+        flex-direction: column;
+    }
+    footer .team div:nth-child(2) {
+        margin-top: 50px;
+        width: 100%;
+    }
+    footer .team button {
+        width: 100%;
+    }
+    footer .nav-footer {
+        padding: 30px 5% 0 5%;
+    }
+    .nav-footer > ul {
+        flex-direction: column;
+    }
+    .nav-footer > ul >li p, .nav-footer > ul >li a {
+        display: flex;
+    }
 }
