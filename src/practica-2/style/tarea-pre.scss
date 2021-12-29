@@ -1,0 +1,148 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+$color_primary: #87119A;
+$color_banner: #9ECEFA;
+$color_list: #707070;
+
+$font_primary: 'Roboto', sans-serif;
+
+*{
+    box-sizing: border-box;
+}
+h2{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-family: $font_primary;
+    font-weight: bold;
+    color: $color_primary;
+    border-left: 8px solid $color_primary;
+    height: 52px;
+    padding-left: 23px;
+    margin-bottom: 18px;
+}
+p{
+    font-family: $font_primary;
+    line-height: 32px;
+}
+.wrap{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    main{
+        flex-grow: 1;
+        padding-top: 15px;
+    }
+} 
+/* HEADER */
+.header{
+    background-color: $color_banner;
+    nav{
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        a{
+            font-family: 'Fascinate', cursive;
+            font-size: 52px;
+        }
+    }
+    ul{
+        display: flex;
+
+        li{
+            a{
+                color: $color_list;
+            }
+            &:first-child{
+                a{
+                    text-decoration: underline;
+                    color: $color_primary;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    a{
+        margin-right: 25px;
+        font-family: $font_primary;
+        text-decoration: none;
+        font-size: 20px;
+        font-style: normal;
+        color: $color_primary;
+    }
+}
+/* MAIN */
+.main{
+    margin: 25px 25px 25px;
+    padding-bottom: 320px;
+}
+/* NOSOTROS */
+.nosotros{
+    .img__nosotros{
+        padding-top: 35px;
+        padding-bottom: 90px;
+    }
+}
+/* SERVICIOS */
+.servicios {
+    .img__servicios{
+        padding-top: 35px;
+        padding-bottom: 90px;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* PORTAFOLIO */
+.portafolio {
+    .img__portafolio{
+        padding-top: 35px;
+        padding-bottom: 90px;
+        img{
+            width: 20%;
+        }
+    }
+}
+
+/* CONTACTO */
+.contacto {
+    div{
+        display: flex;
+    }
+    .text__contacto{
+        display: flex;
+        flex-direction: column;
+        padding-left: 35px;
+        padding-top: 35px;
+        p {
+            span{
+               font-weight: bold;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+.footer{
+    background-color: $color_banner;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        font-weight: bold;
+        span{
+            color: $color_primary;
+            font-weight: bold;
+        }
+    }
+}
