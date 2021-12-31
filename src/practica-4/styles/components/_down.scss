@@ -1,0 +1,19 @@
+.down {
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 65px;
+        /* padding-bottom: 65px; */
+        color: $color_secondary;
+        i{
+            font-size: 6rem;
+        }
+        p{
+            font-family: $font_info;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+}

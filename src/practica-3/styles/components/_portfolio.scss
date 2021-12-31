@@ -1,0 +1,19 @@
+.portafolio{
+    padding: 40px 140px 80px 140px;
+    background-color: #FFD233;
+
+    h2{
+        color: #00AD84;
+        margin-bottom: 50px;
+    }
+}
+.portafolio_container_img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    figure{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}

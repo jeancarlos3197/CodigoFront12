@@ -1,0 +1,74 @@
+.portfolio{
+    padding: 100px 0px 0px 0px;
+    & > h2{
+        margin-bottom: 30px;
+    }
+    div{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        figure{
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            img{
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        .figure{    
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .figure-background{
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: rgba($color_primary, 0.8);
+                width: 80%;
+                padding: 10px;
+                position: absolute;
+                border-radius: 10px;
+                transition: display 2s;
+                h2{
+                    font-family: $font_secondary;
+                    font-size: 1.8rem;
+                    color: #E0E0E0;
+                    font-weight: 600;
+                
+                }
+                p{
+                    font-family: $font_info;
+                    font-size: 1.3rem;
+                    color: #E0E0E0;
+                    line-height: 19px;
+                    font-weight: 600;
+                }
+                .figure-pop{
+                    display: flex;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    p{
+                        font-family: $font_info;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        padding: 2px;
+                        background-color: #D1FFA2;
+                        color:$color_hover;
+                        border-radius: 5px;
+                    }
+                } 
+            }
+            &:hover {
+                .figure-background{
+                    display: flex;
+                }
+            }
+        }
+    }
+}

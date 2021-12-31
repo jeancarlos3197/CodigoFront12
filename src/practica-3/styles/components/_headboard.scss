@@ -1,0 +1,23 @@
+.cabecera{
+    position: relative;
+    h1{
+        position: absolute;
+        top: 10%;
+        left: 40%;
+    }
+    h2{
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+        line-height: 4.2rem;
+        margin-bottom: 0px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: left;
+        background-color: #7299FE80;
+    }
+    img, figure{
+        display: block;
+        width: 100%;
+    }
+}
