@@ -412,11 +412,9 @@ footer hr{
         font-size: 1.8rem;
     }
 
-    /* Article */
-
 }
 
-/* Responsive 828px */
+/* Responsive 430px */
 @media(max-width:430px){
     /* HEADER */
     .header nav ul {
