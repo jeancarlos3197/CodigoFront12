@@ -46,3 +46,9 @@
 - Gilroy
     - Footer:
         - Size: 28px
+
+## Colors
+- color-text-1: #1F3F68
+- color-subtitle-1: #356EAD
+- color-input-1: #F4F4F4
+- color-background-1: #316099
