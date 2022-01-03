@@ -1,0 +1,42 @@
+@media(max-width:828px){
+    /* Header */
+    .header {
+        section {
+            div {
+                padding: 50px 24% 50px 24%;
+            }
+        }
+        & > section > div {
+            h1{
+                font-size: 3.2rem;
+            }
+            p{
+                font-size: 1.6rem;
+                color: rgba(255, 255, 255, 0.78);
+                &>br{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /* Popular */
+    .popular {
+        h3{
+            font-size: 2.8rem;
+            line-height: 38px;
+        }
+    }
+    .popular--secondary {
+        h3 {
+            font-size: 1.8rem;
+            line-height: 26px;
+        }
+    }
+    .popular--article {
+        h3 {
+            font-size: 1.8rem;
+        }
+    }
+
+}

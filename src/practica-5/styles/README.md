@@ -26,7 +26,6 @@
     - Footer:
         - Weight: 400, 700
         - Size: 36px, 20px
-
 - Arial
     - Banner:
         - Weight: 400

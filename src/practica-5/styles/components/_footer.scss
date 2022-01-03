@@ -1,0 +1,117 @@
+footer{
+    background-color: $color-background;
+    padding: 80px 0 60px 0;
+    .nav-footer{
+        padding: 96px 5% 0 5%;
+    }
+    .team{
+        padding: 80px 5% 96px 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5%;
+        div{
+            &:nth-child(1){
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                justify-content: center;
+            }
+            &:nth-child(2){
+                width: 100%;
+                display: flex;
+                justify-content: end;
+            }
+            h3{
+                font-family: $font-helvetica;
+                font-size: 3.6rem;
+                font-weight: 400;
+                line-height: 46px;
+                color: #fff;
+            }
+            p{
+                font-family: $font-arial;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 26px;
+                color: #fff;
+                opacity: 0.6;
+            }
+        }
+        button{
+            height: 56px;
+            padding: 0px 74px 0px 74px;
+            font-family: $font-arial;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+            letter-spacing: 0.04em;
+            background-color: $color-back-clear;
+            border-style: none;
+            text-align: center;
+        }
+    }
+    hr{
+        height: 0px;
+        opacity: 0.4;
+        border: 1px solid #FFFFFF;
+    }
+}
+.logo-footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-footer {
+    h2{
+        font-family: $font-gilroy;
+        color: #fff;
+        font-size: 2.8rem;
+        letter-spacing: 0.02em;
+    }
+    & >{ 
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            justify-content: space-between;
+            &>li {
+                h3{
+                    font-family: $font-helvetica;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    color: #fff;
+                }
+                span{
+                    font-weight: 700;
+                    font-family: $font-helvetica;
+                    margin-right: 16px;
+                }
+                ul{
+                    li{
+                        margin-bottom: 20px;
+                        &:nth-child(1){
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+                p, a{
+                    font-family: $font-arial;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+        p{
+            margin-top: 64px;
+            font-family: $font-arial;
+            font-size: 1.6rem;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: #fff;
+            opacity: 0.4;
+        }
+    }
+}
