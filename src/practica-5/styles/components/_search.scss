@@ -10,10 +10,10 @@
     button{
         padding: 16px 24px;
         font-size: 1.7rem;
-        border-style: none;
         background-color:  $color-input;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        border-style: none;
         opacity: 0.6;
     }
 
@@ -21,6 +21,7 @@
         color: #1F3F68;
         opacity: 0.6;
         cursor: pointer;
+        
         &:hover{
             opacity: 1;
         }

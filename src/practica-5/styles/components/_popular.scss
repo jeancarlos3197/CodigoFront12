@@ -3,33 +3,22 @@
 .popular {
 
     h2{
-        font-family: $font-helvetica;
-        font-size: 2rem;
-        font-weight: 700;
-        color: $color-subtitle;
+        @include fontAll($font-helvetica, 2rem, 700, $color-subtitle);
         margin-bottom: 34px;
     }
     
     h3{
-        font-family: $font-helvetica;
-        font-size: 3.6rem;
-        font-weight: 700;
-        color: $color-text;
+        @include fontAll($font-helvetica, 3.6rem, 700, $color-text);
         line-height: 46px;
         margin-bottom: 17px;
     }
 
     h4{
-        font-family: $font-helvetica;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: $color-text;
+        @include fontAll($font-helvetica, 1.4rem, 700, $color-text);
     }
 
     p{
-        font-family: Arial;
-        font-size: 1.6rem;
-        font-weight: 400;
+        @include fontAll(Arial, 1.6rem, 400, );
         letter-spacing: 0.04em;
         opacity: 0.6;
         line-height: 26px;
@@ -41,16 +30,11 @@
 .popular--author {
 
     h4{
-        font-family: $font-helvetica;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: $color-text;
+        @include fontAll($font-helvetica, 1.4rem, 700, $color-text );
     }
 
     p{
-        font-family: Arial;
-        font-size: 1.4rem;
-        font-weight: 400;
+        @include fontAll( Arial, 1.4rem, 400,  );
         opacity: 0.4;
         margin-bottom: 0px;
     }
@@ -68,10 +52,10 @@
 }
 
 .popular--principal-description{
-    width: 43%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    width: 43%;
+    flex-direction: column;
 }
 
 .popular--credit{
@@ -104,9 +88,9 @@
 }
 
 .popular--secondary{
-    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
     gap: 20px;
 
     figure, figure img{
@@ -124,35 +108,36 @@
 }
 
 .popular--article{
-    width: 100%;
     display: flex;
     justify-content: end;
+    width: 100%;
 
     h3{
         text-transform: uppercase;
-        font-family: $font-helvetica;
-        font-weight: 700;
-        font-size: 1.6rem;
-        color: $color-subtitle;
-        opacity: 0.8;
-        
+        @include fontAll( $font-helvetica, 1.6rem, 700,  $color-subtitle );
+        opacity: 0.8;        
     }
 }
 
 @media(max-width:828px){
     .popular {
+
         h3{
             font-size: 2.8rem;
             line-height: 38px;
         }
     }
+
     .popular--secondary {
+
         h3 {
             font-size: 1.8rem;
             line-height: 26px;
         }
     }
+
     .popular--article {
+
         h3 {
             font-size: 1.8rem;
         }

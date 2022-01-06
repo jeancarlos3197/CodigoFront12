@@ -5,11 +5,6 @@
   src: url("/Front12/src/practica-5/files/gilroy/Gilroy-Bold.ttf") format('truetype');
 }
 
-@counter-style thumbs {
-  system: cyclic;
-  symbols: "\1F44D";
-}
-
 $font-helvetica: Helvetica;
 $font-arial: Arial;
 $font-gilroy: "Gilroy";
@@ -19,3 +14,10 @@ $color-subtitle: #356EAD;
 $color-input: #F4F4F4;
 $color-background: #316099;
 $color-back-clear: #5A98D0;
+
+@mixin fontAll($family, $size, $weight:normal, $color: #000) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
