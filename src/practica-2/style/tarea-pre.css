@@ -39,6 +39,7 @@ p {
           flex-direction: column;
   height: 100vh;
 }
+
 .wrap main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -50,6 +51,7 @@ p {
 .header {
   background-color: #9ECEFA;
 }
+
 .header nav {
   padding: 25px;
   display: -webkit-box;
@@ -62,23 +64,28 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .header h1 a {
-  font-family: "Fascinate", cursive;
+  font-family: 'Fascinate', cursive;
   font-size: 52px;
 }
+
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .header ul li a {
   color: #707070;
 }
+
 .header ul li:first-child a {
   text-decoration: underline;
   color: #87119A;
   font-weight: bold;
 }
+
 .header a {
   margin-right: 25px;
   font-family: "Roboto", sans-serif;
@@ -105,6 +112,7 @@ p {
   padding-top: 35px;
   padding-bottom: 90px;
 }
+
 .servicios figure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +130,7 @@ p {
   padding-top: 35px;
   padding-bottom: 90px;
 }
+
 .portafolio .img__portafolio img {
   width: 20%;
 }
@@ -132,6 +141,7 @@ p {
   display: -ms-flexbox;
   display: flex;
 }
+
 .contacto .text__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +153,7 @@ p {
   padding-left: 35px;
   padding-top: 35px;
 }
+
 .contacto .text__contacto p span {
   font-weight: bold;
 }
@@ -161,10 +172,13 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .footer p {
   font-weight: bold;
 }
+
 .footer p span {
   color: #87119A;
   font-weight: bold;
 }
+/*# sourceMappingURL=tarea-pre.css.map */

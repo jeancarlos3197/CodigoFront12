@@ -1,6 +1,13 @@
+@namespace svg url(http://www.w3.org/2000/svg);
+
 @font-face {
-    font-family: "Gilroy";
-    src: url("../../files/Gilroy-FREE/Gilroy-ExtraBold.otf") format("opentype");
+  font-family: "Gilroy";
+  src: url("/Front12/src/practica-5/files/gilroy/Gilroy-Bold.ttf") format('truetype');
+}
+
+@counter-style thumbs {
+  system: cyclic;
+  symbols: "\1F44D";
 }
 
 $font-helvetica: Helvetica;

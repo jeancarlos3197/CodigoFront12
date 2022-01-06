@@ -35,11 +35,13 @@ p {
 .cabecera {
   position: relative;
 }
+
 .cabecera h1 {
   position: absolute;
   top: 10%;
   left: 40%;
 }
+
 .cabecera h2 {
   position: absolute;
   bottom: 30%;
@@ -51,6 +53,7 @@ p {
   text-align: left;
   background-color: #7299FE80;
 }
+
 .cabecera img, .cabecera figure {
   display: block;
   width: 100%;
@@ -60,9 +63,11 @@ p {
   padding: 30px 40px 70px 40px;
   background-color: #7299FE;
 }
+
 .sobre_mi h2 {
   color: #1D06A7;
 }
+
 .sobre_mi button {
   width: 187px;
   height: 62px;
@@ -79,6 +84,7 @@ p {
   padding: 30px 40px 40px;
   background-color: #9022FF;
 }
+
 .mis_skills p {
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -123,6 +129,7 @@ p {
   padding: 40px 140px 80px 140px;
   background-color: #FFD233;
 }
+
 .portafolio h2 {
   color: #00AD84;
   margin-bottom: 50px;
@@ -138,6 +145,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
 .portafolio_container_img figure {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -147,6 +155,7 @@ p {
   padding: 30px 50px 100px 50px;
   background-color: #3F4E62;
 }
+
 .clientes h2 {
   color: #ADFF28;
 }
@@ -164,6 +173,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .clientes_container_img figure {
   margin-right: 10px;
 }
@@ -172,9 +182,11 @@ p {
   padding: 30px 60px 70px 60px;
   background-color: #1687A0;
 }
+
 .contacto h2 {
   color: #FF1B1B;
 }
+
 .contacto form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,6 +202,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .contacto div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,16 +213,19 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .contacto input {
   padding: 20px 0 20px 5px;
   /* margin: 0 30px 30px 0; */
   width: 48%;
 }
+
 .contacto textarea {
   width: 100%;
   padding: 20px 0 70px 5px;
   margin-bottom: 40px;
 }
+
 .contacto button {
   width: 25%;
   height: 56px;
@@ -220,3 +236,4 @@ p {
   color: #fff;
   font-size: 1.8rem;
 }
+/*# sourceMappingURL=style-pre.css.map */

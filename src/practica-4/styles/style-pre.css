@@ -40,6 +40,7 @@ header {
   margin-top: 20px;
   height: 50px;
 }
+
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +53,7 @@ header ul {
           justify-content: center;
   font-size: 1.4rem;
 }
+
 header ul li a {
   color: #262626;
   font-weight: 500;
@@ -59,13 +61,16 @@ header ul li a {
   position: relative;
   text-align: center;
 }
+
 header ul li a div {
   position: absolute;
   height: 4px;
 }
+
 header ul li a:hover {
   color: #00CF95;
 }
+
 header ul li a:hover > div {
   bottom: 0px;
   right: 0px;
@@ -76,9 +81,11 @@ header ul li a:hover > div {
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
+
 header ul li a:active {
   color: #6D0AD3;
 }
+
 header ul li a:active > div {
   bottom: 0px;
   right: 0px;
@@ -95,20 +102,25 @@ header ul li a:active > div {
   font-size: 2.1rem;
   display: inline;
 }
+
 .title figure {
   position: absolute;
   display: block;
 }
+
 .title figure:nth-child(2) {
   left: 4px;
   top: 0px;
 }
+
 .title figure:nth-child(3) {
   left: 8px;
 }
+
 .title figure:nth-child(4) {
   left: 12px;
 }
+
 .title h1 {
   position: absolute;
   left: 32px;
@@ -136,11 +148,13 @@ main {
           flex-direction: column;
   width: 50%;
 }
+
 .container_description p:nth-child(1) {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
 }
+
 .container_description .name {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -148,6 +162,7 @@ main {
   margin-top: 20px;
   color: #000;
 }
+
 .container_description .front {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -155,6 +170,7 @@ main {
   font-size: 3.8rem;
   margin-top: 20px;
 }
+
 .container_description .description {
   font-family: "Raleway", sans-serif;
   border-left: 4px solid #80E7CA;
@@ -174,6 +190,7 @@ main {
           justify-content: space-between;
   margin-top: 20px;
 }
+
 .about_container button {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -183,6 +200,7 @@ main {
   color: white;
   background-color: #6D0AD3;
 }
+
 .about_container button:hover {
   color: #6D0AD3;
   background-color: white;
@@ -196,6 +214,7 @@ main {
   display: -ms-flexbox;
   display: flex;
 }
+
 .social ul {
   width: 100%;
   display: -webkit-box;
@@ -207,22 +226,27 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+
 .social ul li a {
   color: #000;
 }
+
 .social ul li:nth-child(1) a {
   color: #0176B5;
 }
+
 .social ul li:nth-child(3) {
   background-color: #000;
   width: 24px;
   text-align: center;
   border-radius: 100%;
 }
+
 .social ul li:nth-child(3) a {
   color: #fff;
   font-size: 1.8rem;
 }
+
 .social ul li:nth-child(5) a {
   color: #44C24F;
 }
@@ -232,6 +256,7 @@ main {
   display: -ms-flexbox;
   display: flex;
 }
+
 .photo_profile figure {
   width: 100%;
   background-color: #D1FFA2;
@@ -242,6 +267,7 @@ main {
   display: flex;
   height: auto;
 }
+
 .photo_profile figure img {
   width: 95%;
   height: auto;
@@ -250,9 +276,11 @@ main {
 .container_share {
   width: 20%;
 }
+
 .container_share div {
   text-align: center;
 }
+
 .container_share div p {
   border-top: 1px solid #8F949D;
   border-left: 1px solid #8F949D;
@@ -270,12 +298,15 @@ main {
   border-bottom-left-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
 }
+
 .like a {
   color: #fff;
 }
+
 .like a:hover {
   color: #507FF7;
 }
+
 .like:hover {
   background-color: #fff;
   color: #fff;
@@ -291,12 +322,15 @@ main {
   border: 1px solid #3975EA;
   border-radius: 3px;
 }
+
 .share a {
   color: #fff;
 }
+
 .share a:hover {
   color: #3975EA;
 }
+
 .share:hover {
   background-color: #fff;
   color: #fff;
@@ -312,12 +346,15 @@ main {
   background-color: #4793DA;
   border: 1px solid #4793DA;
 }
+
 .twitter a {
   color: #fff;
 }
+
 .twitter a:hover {
   color: #4793DA;
 }
+
 .twitter:hover {
   background-color: #fff;
   color: #fff;
@@ -342,9 +379,11 @@ main {
   /* padding-bottom: 65px; */
   color: #00CF95;
 }
+
 .down div i {
   font-size: 6rem;
 }
+
 .down div p {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -354,26 +393,31 @@ main {
 .portfolio {
   padding: 100px 0px 0px 0px;
 }
+
 .portfolio > h2 {
   margin-bottom: 30px;
 }
+
 .portfolio div {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
+
 .portfolio div figure {
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
+
 .portfolio div figure img {
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
+
 .portfolio div .figure {
   position: relative;
   display: -webkit-box;
@@ -390,6 +434,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .portfolio div .figure .figure-background {
   display: none;
   -webkit-box-orient: vertical;
@@ -407,12 +452,14 @@ main {
   -webkit-transition: display 2s;
   transition: display 2s;
 }
+
 .portfolio div .figure .figure-background h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   color: #E0E0E0;
   font-weight: 600;
 }
+
 .portfolio div .figure .figure-background p {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -420,6 +467,7 @@ main {
   line-height: 19px;
   font-weight: 600;
 }
+
 .portfolio div .figure .figure-background .figure-pop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,6 +478,7 @@ main {
       flex-wrap: wrap;
   gap: 5px;
 }
+
 .portfolio div .figure .figure-background .figure-pop p {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -439,6 +488,7 @@ main {
   color: #5A0CB0;
   border-radius: 5px;
 }
+
 .portfolio div .figure:hover .figure-background {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,6 +498,7 @@ main {
 .services {
   padding: 100px 0px 0px 0px;
 }
+
 .services > h2 {
   margin-bottom: 30px;
 }
@@ -455,8 +506,8 @@ main {
 .container_services {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -478,10 +529,12 @@ main {
   padding: 30px 0px 50px 30px;
   border-radius: 10px;
 }
+
 .service_background i {
   font-size: 5rem;
   color: #fff;
 }
+
 .service_background p {
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
@@ -491,7 +544,6 @@ main {
       -ms-flex-pack: end;
           justify-content: end;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
       align-self: end;
   padding: 6px 15% 6px 15%;
   background-color: #D1FFA2;
@@ -502,16 +554,20 @@ main {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 .service_background:nth-child(odd) {
   -ms-grid-column-align: end;
       justify-self: end;
 }
+
 .service_background:hover {
   border: 4px solid #5A0CB0;
 }
+
 .service_background:hover > i {
   color: #5A0CB0;
 }
+
 .service_background:hover > p {
   color: #fff;
   background: #5A0CB0;
@@ -542,48 +598,27 @@ main {
 .blog {
   padding: 100px 0px 0px 0px;
 }
+
 .blog > h2 {
   margin-bottom: 30px;
 }
+
 .blog .blog_grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr 20px 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
 }
-.blog .blog_grid > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.blog .blog_grid > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.blog .blog_grid > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-.blog .blog_grid > *:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-.blog .blog_grid > *:nth-child(5) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-.blog .blog_grid > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
+
 .blog .blog_grid div:nth-child(1) {
   -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row-span: 2;
   grid-row: span 2;
 }
+
 .blog .blog_grid div:nth-child(1) h2 {
   font-size: 2.8rem;
   color: #000;
@@ -591,17 +626,20 @@ main {
   margin: 20px 0px 20px 0px;
   font-weight: 600;
 }
+
 .blog .blog_grid div:nth-child(1) > p {
   font-size: 1.3rem;
   line-height: 26px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
+
 .blog .blog_grid div:nth-child(1) > p span {
   color: #5A0CB0;
   text-decoration: underline;
   font-weight: 700;
 }
+
 .blog .blog_grid div:nth-child(2) h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
@@ -609,22 +647,26 @@ main {
   line-height: 18px;
   font-weight: 600;
 }
+
 .blog .blog_grid div:nth-child(2) p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 20px;
   font-size: 1.1rem;
 }
+
 .blog .blog_grid div:nth-child(3) h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
 }
+
 .blog .blog_grid div:nth-child(3) p {
   font-family: "Raleway", sans-serif;
   font-size: 1.1rem;
   line-height: 20px;
 }
+
 .blog .blog_grid div:nth-child(4) div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,6 +679,7 @@ main {
       -ms-flex-pack: start;
           justify-content: start;
 }
+
 .blog .blog_grid div:nth-child(4) h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
@@ -645,6 +688,7 @@ main {
   font-weight: 600;
   margin-left: 17px;
 }
+
 .blog .blog_grid div:nth-child(4) p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -652,6 +696,7 @@ main {
   font-size: 1.1rem;
   padding-left: 17px;
 }
+
 .blog .blog_grid div:nth-child(5) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,12 +709,14 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .blog .blog_grid div:nth-child(5) p {
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 27px;
 }
+
 .blog .blog_grid div:nth-child(5) div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,6 +725,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .blog .blog_grid div:nth-child(5) div input {
   width: 100%;
   padding: 15px 0px 15px 15px;
@@ -688,6 +736,7 @@ main {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 .blog .blog_grid div:nth-child(5) div button {
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
@@ -702,6 +751,7 @@ main {
 .contact {
   padding: 100px 0px 40px 0px;
 }
+
 .contact form {
   margin-top: 30px;
   display: -ms-grid;
@@ -714,6 +764,7 @@ main {
           align-items: center;
   grid-gap: 20px;
 }
+
 .contact form div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,6 +774,7 @@ main {
           justify-content: space-between;
   gap: 20px;
 }
+
 .contact form button {
   width: 150px;
   margin: auto;
@@ -734,10 +786,12 @@ main {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+
 .contact form textarea {
   width: 620px;
   resize: none;
 }
+
 .contact form input, .contact form select {
   width: 300px;
 }
@@ -751,6 +805,7 @@ main {
   border-style: none;
   border: 1px solid #6D0AD3;
 }
+
 .contact form input:focus, .contact form select:focus, .contact form textarea:focus {
   border: 1px solid #00CF95;
   outline: none;
@@ -759,31 +814,22 @@ main {
 footer {
   padding-bottom: 20px;
 }
+
 footer > div {
   padding: 30px 0px 30px 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
+      grid-template-rows: 1fr;
 }
-footer > div > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-footer > div > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-footer > div > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
+
 footer > div > div {
   -ms-grid-column-align: center;
       justify-self: center;
 }
+
 footer > div .social_footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,6 +838,7 @@ footer > div .social_footer ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 footer > div h2 {
   text-align: center;
   line-height: 35px;
@@ -799,6 +846,7 @@ footer > div h2 {
   font-weight: 500;
   font-size: 2.8rem;
 }
+
 footer > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,6 +860,7 @@ footer > ul {
   font-size: 1.4rem;
   margin-bottom: 50px;
 }
+
 footer > ul li a {
   color: #262626;
   font-weight: 500;
@@ -819,13 +868,16 @@ footer > ul li a {
   position: relative;
   text-align: center;
 }
+
 footer > ul li a div {
   position: absolute;
   height: 4px;
 }
+
 footer > ul li a:hover {
   color: #00CF95;
 }
+
 footer > ul li a:hover > div {
   bottom: 0px;
   right: 0px;
@@ -836,9 +888,11 @@ footer > ul li a:hover > div {
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
+
 footer > ul li a:active {
   color: #6D0AD3;
 }
+
 footer > ul li a:active > div {
   bottom: 0px;
   right: 0px;
@@ -849,6 +903,7 @@ footer > ul li a:active > div {
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
+
 footer > p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,10 +911,11 @@ footer > p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 1.2rem;
   font-weight: 400;
 }
+
 footer > p > i {
   color: red;
 }
@@ -869,9 +925,9 @@ footer > p > i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
+
 .social_footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,22 +939,27 @@ footer > p > i {
       justify-content: space-around;
   gap: 12px;
 }
+
 .social_footer ul li a {
   color: #000;
 }
+
 .social_footer ul li:nth-child(1) a {
   color: #0176B5;
 }
+
 .social_footer ul li:nth-child(3) {
   background-color: #000;
   width: 24px;
   text-align: center;
   border-radius: 100%;
 }
+
 .social_footer ul li:nth-child(3) a {
   color: #fff;
   font-size: 1.8rem;
 }
+
 .social_footer ul li:nth-child(5) a {
   color: #44C24F;
 }
@@ -907,3 +968,4 @@ footer .title figure, footer .title figure img {
   width: auto;
   height: auto;
 }
+/*# sourceMappingURL=style-pre.css.map */

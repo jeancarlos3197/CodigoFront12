@@ -1,46 +1,103 @@
+// **Header
+
 .header {
+
     nav{
         display: flex;
         justify-content: space-around;
         padding-top: 40px;
         padding-bottom: 40px;
-        ul{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 50px;
-            font-family: $font-helvetica;
-            font-size: 2rem;
-        }
-    }   
+    }
+
     section{
         position: relative;
         display: block;
-        div{
-            padding: 50px 220px 50px 220px;
-            font-family: $font-arial;
-            color: #fff;
-            text-align: center;
-            h1{
-                font-size: 4.4rem;
-                margin-bottom: 40px;
-            }
-            p{
-                font-size: 2rem;
-                line-height: 30px;
-            }
-        }
+
         figure, figure img{
             display: block;
             width: 100%;
             height: 100%;
             position: absolute;
             z-index: -1;
-        }
+        }    
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        font-family: $font-helvetica;
+        font-size: 2rem;
+    }
+
+    div{
+        padding: 50px 220px 50px 220px;
+        font-family: $font-arial;
+        color: #fff;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 4.4rem;
+        margin-bottom: 40px;
+    }
+
+    p{
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
     }
 }
 
 .header--active{
     font-weight: 700;
-    color: $color-text;
+
+    a{
+        color: $color-text;
+        text-decoration: none;
+    }
+}
+
+@media(max-width:828px){
+    .header{
+        section{
+            
+            div {
+                padding: 50px 24% 50px 24%;
+
+                h1{
+                    font-size: 3.2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    color: rgba(255, 255, 255, 0.78);
+                }
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:430px){
+    .header {
+        nav ul {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.3rem;
+            line-height: 23px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+    }
 }
