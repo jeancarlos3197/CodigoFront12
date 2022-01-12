@@ -1,0 +1,28 @@
+/*
+MIXINGS
+*/
+@mixin breakpoint($breakpoint) {
+  @if ($breakpoint == lg) {
+    @media (max-width: map-get($breakpoins, lg)) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == md) {
+    @media (max-width: map-get($breakpoins, md)) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == sm) {
+    @media (max-width: map-get($breakpoins, sm)) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == xs) {
+    @media (max-width: map-get($breakpoins, xs)) {
+      @content;
+    }
+  }
+}

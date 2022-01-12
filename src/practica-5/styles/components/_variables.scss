@@ -9,11 +9,26 @@ $font-helvetica: Helvetica;
 $font-arial: Arial;
 $font-gilroy: "Gilroy";
 
+$fonts:(
+  base: $font-helvetica,
+  body: $font-arial,
+  footer: $font-gilroy
+);
+
 $color-text: #1F3F68;
 $color-subtitle: #356EAD;
 $color-input: #F4F4F4;
 $color-background: #316099;
 $color-back-clear: #5A98D0;
+
+$colors:(
+  text: $color-text,
+  subtitle: $color-subtitle,
+  input: $color-input,
+  background: $color-background,
+  back-clear: $color-back-clear,
+
+);
 
 @mixin fontAll($family, $size, $weight:normal, $color: #000) {
   font-family: $family;

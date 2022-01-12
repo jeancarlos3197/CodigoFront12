@@ -19,6 +19,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
+            object-fit: cover;
         }    
     }
 
@@ -88,9 +89,12 @@
 
 @media(max-width:430px){
     .header {
-        
+        nav{
+            gap: 20px;
+        }
         nav ul {
             font-size: 1.6rem;
+            gap: 10px;
         }
 
         p {

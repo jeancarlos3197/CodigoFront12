@@ -1,0 +1,145 @@
+/*----------------------------------------------------------------
+/*.footer*/
+/*--------------------------------------------------------------*/
+.footer {
+  background: #316099;
+  color: #fff;
+
+  span {
+    margin-right: 15px;
+  }
+
+  &__top {
+    padding: 90px 0;
+    border-bottom: 1px solid #fff;
+
+    h2 {
+      font-size: 3.6rem;
+      line-height: 46px;
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      opacity: 0.6;
+    }
+
+    button {
+      background: #5a98d0;
+      color: #fff;
+      padding: 15px 74px;
+      border: none;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__bottom {
+    padding: 98px 0 64px;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    a,
+    li {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    li {
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__allrights {
+    opacity: 0.4;
+  }
+
+  @include breakpoint(md) {
+    &__top,
+    &__bottom {
+      .container {
+        padding: 0 80px;
+      }
+    }
+  }
+
+  @include breakpoint(sm) {
+    &__top,
+    &__bottom {
+      .container {
+        padding: 0 25px;
+      }
+    }
+
+    &__top {
+      padding: 40px 0;
+
+      h2 {
+        font-size: 2.8rem;
+        margin-bottom: 14px;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+
+    &__right {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    &__bottom {
+      padding: 40px 0;
+    }
+
+    &__flex {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

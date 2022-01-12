@@ -1,0 +1,40 @@
+/*----------------------------------------------------------------
+/*GLOBALS*/
+/*--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: map-get($font-sizes, base);
+}
+
+body {
+  font-size: map-get($font-sizes, body);
+  font-family: map-get($font-family, global);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+
+  @include breakpoint(lg) {
+    padding: 0 20px;
+  }
+}
+
+.title-section {
+  font-size: 2rem;
+  color: #356ead;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+}

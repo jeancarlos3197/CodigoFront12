@@ -1,8 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @namespace svg url(http://www.w3.org/2000/svg);
 @font-face {
   font-family: "Gilroy";
   src: url("/Front12/src/practica-5/files/gilroy/Gilroy-Bold.ttf") format("truetype");
 }
+
 html {
   font-size: 62.5%;
 }
@@ -16,17 +154,22 @@ html {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .header section {
   display: block;
   position: relative;
 }
+
 .header section figure, .header section figure img {
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,20 +184,24 @@ html {
   font-family: Helvetica;
   font-size: 2rem;
 }
+
 .header div {
   padding: 50px 220px 50px 220px;
   font-family: Arial;
   color: #fff;
   text-align: center;
 }
+
 .header h1 {
   font-size: 4.4rem;
   margin-bottom: 40px;
 }
+
 .header p {
   font-size: 2rem;
   line-height: 30px;
 }
+
 .header a {
   text-decoration: none;
   color: #000;
@@ -63,6 +210,7 @@ html {
 .header--active {
   font-weight: 700;
 }
+
 .header--active a {
   color: #1F3F68;
   text-decoration: none;
@@ -83,9 +231,14 @@ html {
     display: none;
   }
 }
+
 @media (max-width: 430px) {
+  .header nav {
+    gap: 20px;
+  }
   .header nav ul {
     font-size: 1.6rem;
+    gap: 10px;
   }
   .header p {
     font-size: 1.3rem;
@@ -97,9 +250,11 @@ html {
     margin-bottom: 18px;
   }
 }
+
 main {
   padding: 55px 5% 0px 5%;
 }
+
 main hr {
   height: 0px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -108,11 +263,13 @@ main hr {
 .search {
   padding-bottom: 56px;
 }
+
 .search form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .search button {
   padding: 16px 24px;
   font-size: 1.7rem;
@@ -122,14 +279,17 @@ main hr {
   border-style: none;
   opacity: 0.6;
 }
+
 .search i {
   color: #1F3F68;
   opacity: 0.6;
   cursor: pointer;
 }
+
 .search i:hover {
   opacity: 1;
 }
+
 .search input {
   width: 100%;
   border-style: none;
@@ -140,6 +300,10 @@ main hr {
   opacity: 0.6;
 }
 
+.search input:focus {
+  outline: none;
+}
+
 .popular h2 {
   font-family: Helvetica;
   font-size: 2rem;
@@ -147,6 +311,7 @@ main hr {
   color: #356EAD;
   margin-bottom: 34px;
 }
+
 .popular h3 {
   font-family: Helvetica;
   font-size: 3.6rem;
@@ -155,12 +320,14 @@ main hr {
   line-height: 46px;
   margin-bottom: 17px;
 }
+
 .popular h4 {
   font-family: Helvetica;
   font-size: 1.4rem;
   font-weight: 700;
   color: #1F3F68;
 }
+
 .popular p {
   font-family: Arial;
   font-size: 1.6rem;
@@ -179,6 +346,7 @@ main hr {
   font-weight: 700;
   color: #1F3F68;
 }
+
 .popular--author p {
   font-family: Arial;
   font-size: 1.4rem;
@@ -232,6 +400,7 @@ main hr {
           align-items: center;
   gap: 35px;
 }
+
 .popular--share i {
   font-size: 1.8rem;
   color: #356EAD;
@@ -240,9 +409,11 @@ main hr {
 .popular--principal-image {
   width: 57%;
 }
+
 .popular--principal-image figure {
   width: 100%;
 }
+
 .popular--principal-image img {
   width: 100%;
   height: 100%;
@@ -258,9 +429,11 @@ main hr {
   padding-bottom: 50px;
   gap: 20px;
 }
+
 .popular--secondary figure, .popular--secondary figure img {
   width: 100%;
 }
+
 .popular--secondary h3 {
   line-height: 32px;
   font-size: 2.2rem;
@@ -279,6 +452,7 @@ main hr {
           justify-content: end;
   width: 100%;
 }
+
 .popular--article h3 {
   text-transform: uppercase;
   font-family: Helvetica;
@@ -293,16 +467,15 @@ main hr {
     font-size: 2.8rem;
     line-height: 38px;
   }
-
   .popular--secondary h3 {
     font-size: 1.8rem;
     line-height: 26px;
   }
-
   .popular--article h3 {
     font-size: 1.8rem;
   }
 }
+
 @media (max-width: 430px) {
   .popular h3 {
     font-size: 2rem;
@@ -311,7 +484,6 @@ main hr {
   .popular p {
     font-size: 1.4rem;
   }
-
   .popular--principal-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -322,7 +494,6 @@ main hr {
             flex-direction: column;
     width: 100%;
   }
-
   .popular--principal-description {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -330,14 +501,12 @@ main hr {
             flex-direction: column;
     width: 100%;
   }
-
   .popular--principal-image {
     width: 100%;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-
   .popular--secondary {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -348,18 +517,18 @@ main hr {
     font-size: 1.8rem;
     gap: 30px;
   }
-
   .popular--secondary-container {
     width: 100%;
   }
-
   .popular--article h3 {
     font-size: 1.6rem;
   }
 }
+
 .article {
   padding: 55px 0 95px 0;
 }
+
 .article h3 {
   font-family: Helvetica;
   font-size: 2rem;
@@ -368,6 +537,7 @@ main hr {
   opacity: 0.8;
   padding-bottom: 34px;
 }
+
 .article p {
   font-family: Arial;
   font-size: 1.4rem;
@@ -395,9 +565,11 @@ main hr {
   display: flex;
   gap: 20px;
 }
+
 .article--group figure {
   width: 35%;
 }
+
 .article--group figure img {
   width: 100%;
   height: 100%;
@@ -436,9 +608,11 @@ main hr {
   margin-top: 56px;
   color: #356EAD;
 }
+
 .article-post p:nth-child(1) span {
   margin-right: 20px;
 }
+
 .article-post p:nth-child(2) span {
   margin-left: 20px;
 }
@@ -447,7 +621,6 @@ main hr {
   .article h3 {
     display: none;
   }
-
   .article--group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -460,7 +633,6 @@ main hr {
   .article--group div {
     width: 100%;
   }
-
   .article-post {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -485,10 +657,12 @@ main hr {
     display: none;
   }
 }
+
 footer {
   background-color: #316099;
   padding: 80px 0 60px 0;
 }
+
 footer hr {
   height: 0px;
   opacity: 0.4;
@@ -508,6 +682,7 @@ footer hr {
   gap: 5%;
   padding: 80px 5% 96px 5%;
 }
+
 .team div:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,6 +696,7 @@ footer hr {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .team div:nth-child(2) {
   width: 100%;
   display: -webkit-box;
@@ -530,6 +706,7 @@ footer hr {
       -ms-flex-pack: end;
           justify-content: end;
 }
+
 .team h3 {
   font-family: Helvetica;
   font-size: 3.6rem;
@@ -537,6 +714,7 @@ footer hr {
   color: #fff;
   line-height: 46px;
 }
+
 .team p {
   font-family: Arial;
   font-size: 1.6rem;
@@ -545,6 +723,7 @@ footer hr {
   line-height: 26px;
   opacity: 0.6;
 }
+
 .team button {
   font-family: Arial;
   font-size: 1.6rem;
@@ -571,6 +750,7 @@ footer hr {
 .nav-footer {
   padding: 96px 5% 0 5%;
 }
+
 .nav-footer h2 {
   font-family: "Gilroy";
   font-size: 2.8rem;
@@ -590,23 +770,28 @@ footer hr {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .list-nav-footer h3 {
   font-family: Helvetica;
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
 }
+
 .list-nav-footer span {
   font-weight: 700;
   font-family: Helvetica;
   margin-right: 16px;
 }
+
 .list-nav-footer li {
   margin-bottom: 20px;
 }
+
 .list-nav-footer li:nth-child(1) {
   margin-bottom: 30px;
 }
+
 .list-nav-footer p, .list-nav-footer a {
   font-family: Arial;
   font-size: 1.6rem;
@@ -644,11 +829,9 @@ footer hr {
   footer .team button {
     width: 100%;
   }
-
   .nav-footer {
     padding: 30px 5% 0 5%;
   }
-
   .list-nav-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -660,10 +843,10 @@ footer hr {
     display: -ms-flexbox;
     display: flex;
   }
-
   .list-nav-footeri p, .list-nav-footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
+/*# sourceMappingURL=style-pre.css.map */

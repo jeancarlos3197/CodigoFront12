@@ -1,0 +1,64 @@
+/*----------------------------------------------------------------
+/*.article*/
+/*--------------------------------------------------------------*/
+.article {
+  h2 {
+    color: #1f3f68;
+    font-size: 3.6rem;
+    line-height: 46px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 26px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+
+    h3,
+    time {
+      color: #1f3f68;
+      font-size: 1.4rem;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+
+    time {
+      opacity: 0.4;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: inline-block;
+        margin-left: 38px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(md) {
+    h2 {
+      font-size: 2.8rem;
+    }
+
+    &__info {
+      &__right {
+        a {
+          margin-left: 18px;
+        }
+      }
+    }
+  }
+}

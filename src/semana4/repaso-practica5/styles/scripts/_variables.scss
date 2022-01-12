@@ -1,0 +1,26 @@
+/*----------------------------------------------------------------
+/*VARIABLES*/
+/*--------------------------------------------------------------*/
+
+/*
+1.FONTS
+*/
+$font-sizes: (
+  base: 62.5%,
+  body: 1.6rem,
+);
+
+$font-family: (
+  global: arial,
+  title: Helvetica,
+);
+
+/*
+2. MEDIAQUERIES
+*/
+$breakpoins: (
+  lg: 980px,
+  md: 880px,
+  sm: 720px,
+  xs: 580px,
+);
