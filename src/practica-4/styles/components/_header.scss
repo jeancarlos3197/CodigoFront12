@@ -3,6 +3,8 @@ header{
     justify-content: space-around;
     margin-top: 20px;
     height: 50px;
+    position: sticky;
+    top: 0;
     ul{
         display: flex;
         align-items: center;
@@ -28,18 +30,6 @@ header{
                         width: 4px;
                         border-radius: 50%;
                         background-color: $color_secondary;
-                        transition: all 500ms;
-                    }
-                }
-                &:active{ 
-                    color: $color_primary;
-                    &> div{
-                        bottom: 0px;
-                        right: 0px;
-                        width: 100%;
-                        border-bottom: 4px solid $color_primary;
-                        background-color: $color_primary;
-                        border-radius: 20px;
                         transition: all 500ms;
                     }
                 }

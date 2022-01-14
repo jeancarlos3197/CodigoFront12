@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -31,6 +32,21 @@ main {
   margin: auto;
 }
 
+.listadoClick {
+  color: #6D0AD3;
+}
+
+.listadoClick > div {
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  border-bottom: 4px solid #6D0AD3;
+  background-color: #6D0AD3;
+  border-radius: 20px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +55,9 @@ header {
       justify-content: space-around;
   margin-top: 20px;
   height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 header ul {
@@ -78,21 +97,6 @@ header ul li a:hover > div {
   width: 4px;
   border-radius: 50%;
   background-color: #00CF95;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-}
-
-header ul li a:active {
-  color: #6D0AD3;
-}
-
-header ul li a:active > div {
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  border-bottom: 4px solid #6D0AD3;
-  background-color: #6D0AD3;
-  border-radius: 20px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
