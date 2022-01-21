@@ -70,13 +70,10 @@ form.addEventListener("submit",function(){
 */
 
 inputs.forEach(element=>{
-    element.addEventListener('mouseenter',function(){
-      element.style.backgroundColor = element.dataset.color;
+  element.addEventListener('mouseenter',function(){
+      this.style.backgroundColor = element.dataset.color;
   })
-});
-
-inputs.forEach(element=>{
   element.addEventListener('mouseout',function(){
-      element.style.backgroundColor = 'white';
-    })
+    this.style.backgroundColor = 'white';
+  })
 });
