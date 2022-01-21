@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .acordion-body{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="acordion">
+        <div class="acordion-item">
+            <h2 class="acordion-header">
+                <button class="acordion-button">
+                    Accordion #1
+                </button>
+            </h2>
+            <div class="acordion-collapse">
+                <div class="acordion-body abierto" >
+                    <strong>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</strong>
+                </div>
+            </div>
+        </div>
+        <div class="acordion-item">
+            <h2 class="acordion-header">
+                <button class="acordion-button">
+                    Accordion #2
+                </button>
+            </h2>
+            <div class="acordion-collapse">
+                <div class="acordion-body">
+                    <strong>This is the second item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</strong>
+                </div>
+            </div>
+        </div>
+        <div class="acordion-item">
+            <h2 class="acordion-header">
+                <button class="acordion-button">
+                    Accordion #3
+                </button>
+            </h2>
+            <div class="acordion-collapse">
+                <div class="acordion-body">
+                    <strong>This is the third item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const button= document.querySelectorAll('button');
+        function changeAttr(){
+            this.style.display = 'block'
+        }
+        button.forEach((event)=>{
+            console.log(event)
+        })
+    </script>
+</body>
+</html>

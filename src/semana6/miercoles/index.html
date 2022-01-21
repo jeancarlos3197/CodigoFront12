@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+
+    <style>
+        .dropdown {
+            position: relative;
+            margin: 0;
+            padding: 10px;
+            border: none;
+            background: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown .menu {
+            position: absolute;
+            left: 0;
+            padding: 0;
+            list-style: none;
+            background: red;
+            min-width: 200px;
+            top: 100%;
+            margin: 0;
+            display: none;
+        }
+
+        .dropdown .menu a {
+            display: block;
+            padding: 10px;
+            text-align: left;
+            text-decoration: none;
+            border-bottom: 1px solid blue;
+            color: #fff;
+        }
+
+        .dropdown .menu a:hover {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="js_button dropdown">
+        BOTON
+        <ul class="menu">
+            <li>
+                <a href="">LINK 1</a>
+            </li>
+            <li>
+                <a href="">LINK 1</a>
+            </li>
+            <li>
+                <a href="">LINK 1</a>
+            </li>
+        </ul>
+    </button>
+
+    <button class="js_button_1 dropdown">
+        BOTON 2
+        <ul class="menu">
+            <li>
+                <a href="">LINK 1</a>
+            </li>
+            <li>
+                <a href="">LINK 1</a>
+            </li>
+            <li>
+                <a href="">LINK 1</a>
+            </li>
+        </ul>
+    </button>
+
+
+    <button class="js_button_3">BOTON 3</button>
+    <script src="./main.js"></script>
+</body>
+
+</html>
