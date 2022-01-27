@@ -1,0 +1,25 @@
+.card{
+    position: relative;
+}
+
+.boton{
+    width: 30px;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+
+    border: none;
+    position: absolute;
+}
+
+.editar{
+    top: -15px;
+    left: -15px;
+    background-color: #40BAFF;
+}
+
+.eliminar{
+    top: -15px;
+    right: -15px;
+    background-color: #FF4040;
+}

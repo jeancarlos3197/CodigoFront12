@@ -96,3 +96,16 @@ function guardarComputadora() {
 }
 obtenerComputadoras();
 guardarComputadora();
+
+function obtenerComputadoras() {
+  fetch("https://61ef3d18d593d20017dbb39f.mockapi.io/computers/1")
+  .then(response=>{
+    console.log(response);
+  })
+  .then(response=>{
+    console.log(response);
+  })
+  .catch(error=>{
+    console.log(error)
+  })
+}
