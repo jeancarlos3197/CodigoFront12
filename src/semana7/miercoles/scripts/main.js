@@ -89,7 +89,7 @@ function crearListado(api) {
     inputId.value = api.id;
   };
 
-  nodo.classList.add("col-lg-4", "col-md-6");
+  nodo.classList.add("col-lg-4", "col-md-6", "mb-4");
   return nodo;
 }
 
