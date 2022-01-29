@@ -1,36 +1,45 @@
-const baseApi = "https://61ef3d0cd593d20017dbb393.mockapi.io";
-async function guardarTarea(tarea) {
-  try {
-    await fetch(`${baseApi}/tasks`, {
-      method: "POST",
-      body: JSON.stringify(tarea),
-      headers: { "Content-Type": "application/json" },
-    });
-  } catch (e) {
-    alert("No se pudo registrar la tarea");
-  }
+/* form.onsubmit = function (event) {
+  event.preventDefault();
+  tarea.push(obtenerTareas());
+  agregarListado(armarlistado(obtenerTareas()), list);
+  form.reset();
+  tarea.forEach((element, index)=>{
+      console.log(index, element);
+      localStorage.setItem(`${index}`, JSON.stringify(element));
+  })
+};
+
+function obtenerTareas(){
+    return {
+        tarea: form.querySelector('.js-tarea').value
+    }
 }
 
-async function obtenerTareas() {
-  try {
-    const data = await fetch(`${baseApi}/tasks`).then((respuesta) =>
-      respuesta.json()
-    );
-    return data;
-  } catch (e) {
-    alert("no se pudo obtener las tareas");
-  }
+function armarlistado(object) {
+  const nodo = document.createElement("li");
+  nodo.innerHTML = `
+    <input
+        class="form-check-input me-3"
+        type="checkbox"
+        value=""
+        id="flexCheckDefault"
+    />
+    <label class="form-check-label me-3" for="flexCheckDefault">
+        ${object.tarea}
+    </label>
+    <button class="btn btn-danger">
+        X
+    </button>
+    `;
+
+    nodo.classList.add("d-flex", "align-items-center", "mb-3");
+    return nodo;
 }
 
-async function eliminarTarea(idTarea) {
-  try {
-    await fetch(`${baseApi}/tasks/${idTarea}`, {
-      method: "DELETE",
-    }).then((respuesta) => respuesta.json());
-  } catch (e) {
-    alert("no se puedo eliminar la tarea");
-  }
+function agregarListado(nodo, list){
+    list.appendChild(nodo);
 }
+ */
 
 function guardarTareaEnStorage(tarea) {
   let tareas = [];
@@ -60,15 +69,25 @@ async function todoList() {
   const form = document.querySelector("form"); // atrapando elemento formulario
 
   /*
-   Funcion que creara elemento nodo para inyectar en html
-  */
+     Funcion que creara elemento nodo para inyectar en html
+    */
   function creaTarea(tarea) {
-    const elementNodo = document.createElement("div");
+    const elementNodo = document.createElement("li");
+    elementNodo.classList.add("d-flex", "align-items-center", "mb-3");
     elementNodo.innerHTML = `
-       ${tarea.task}
-       <button class="js_delete">X</button>
-       <input type="checkbox" class="js_check"/>
-    `;
+      <input
+          class="form-check-input me-3 js_check"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+      />
+      <label class="form-check-label me-3" for="flexCheckDefault">
+          ${tarea.task}
+      </label>
+      <button class="btn btn-danger js_delete">
+          X
+      </button>
+      `;
 
     elementNodo.querySelector(".js_delete").onclick = async function () {
       if (window.confirm("Estas seguro que quieres eliminar la tarea")) {
@@ -86,8 +105,8 @@ async function todoList() {
   }
 
   /*
-   Funcion que inyecta elemento en el dom
-  */
+     Funcion que inyecta elemento en el dom
+    */
   function inyectarElementoEnElDom(elemento) {
     const contenedor = document.getElementById("tasks");
 
@@ -95,8 +114,8 @@ async function todoList() {
   }
 
   /*
-  Obtiene las tareas del servicio y las agrega al html
-  */
+    Obtiene las tareas del servicio y las agrega al html
+    */
   async function inyectaTareasPorServicio() {
     // OBTENIENDO TAREAS Y RECORRIENDO LAS TAREAS Y CREANDOLAS
     // const tareas = await obtenerTareas();
@@ -108,8 +127,8 @@ async function todoList() {
   }
 
   /*
-   Registro de evento de formulario
-  */
+     Registro de evento de formulario
+    */
   form.onsubmit = async function (event) {
     // registro evento submit
     event.preventDefault(); // quita comportamiento por defecto
